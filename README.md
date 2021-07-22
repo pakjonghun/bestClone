@@ -4,7 +4,7 @@
 ### 백엔드 작성자(1명) 박정훈
 ### 스택 nodejs
 
-## 사용한 모듈
+### 사용한 모듈
 1. DB:postgres, prisma
 2. server : express
  
