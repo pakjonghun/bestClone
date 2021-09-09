@@ -29,7 +29,6 @@ const whiteList = [
 
 const corsOptions = {
   origin: function (origin, callback) {
-    console.log(origin, callback);
     if (whiteList.indexOf(origin) >= 0 || !origin) {
       callback(null, true);
     } else {
@@ -38,7 +37,7 @@ const corsOptions = {
   },
 };
 
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use("/menu", menuRouter);
